@@ -1,5 +1,5 @@
 module Mux4_1(in, sel, out);
-	input [31:0][3:0] in;
+	input [3:0] [31:0] in;
 	input [1:0] sel;
 	output [31:0]out;
 	wire [31:0]t1, t2;
@@ -12,7 +12,7 @@ endmodule
 
 // mux 8 to 1
 module Mux8_1(in, sel, out);
-	input [31:0][7:0] in;
+	input [7:0][31:0]in;
 	input [2:0] sel;
 	output [31:0]out;
 
@@ -26,7 +26,7 @@ endmodule
 
 //mux 16 to 1 
 module Mux16_1(in, select, out);
-	input [31:0][15:0] in;
+	input [15:0][31:0] in;
 	input [3:0] sel;
 	output [31:0]out;
 
