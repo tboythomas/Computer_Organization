@@ -4,8 +4,8 @@ module Mux4_1(in, sel, out);
 	output [31:0]out;
 	wire [31:0]t1, t2;
 
-	mux2_1 m1 (in[2], in[3], sel[0], t1);
-	mux2_1 m2 (in[0], in[4], sel[0], t2);
+	mux2_1 m1 (in[2], in[1], sel[0], t1);
+	mux2_1 m2 (in[0], in[3], sel[0], t2);
 	mux2_1 m3 (t1, t2, sel[1], out);
 
 endmodule
